@@ -1,4 +1,4 @@
-var profile = require("./profile.js");
+import profile from "./profile.js";
 
 var users = process.argv.slice(2);
 
