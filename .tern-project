@@ -1,0 +1,20 @@
+{
+  "ecmaVersion": 5,
+  "libs": [
+    "browser"
+  ],
+  "loadEagerly": [
+    "app.js"
+  ],
+  "dontLoad": [
+    "node_modules"
+  ],
+  "plugins": {
+    "complete_strings": {},
+    "node": {},
+    "requirejs": {},
+    "commonjs": {},
+    "modules": {},
+    "doc_comment": {}
+  }
+}
