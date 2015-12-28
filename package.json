@@ -1,0 +1,15 @@
+{
+  "name": "node_basics",
+  "version": "1.0.0",
+  "description": "Treehouse Node.js Basics project",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuakleveter/treehouse_node_basics.git"
+  },
+  "author": "Joshua Kleveter",
+  "bugs": {
+    "url": "https://github.com/joshuakleveter/treehouse_node_basics/issues"
+  },
+  "homepage": "https://github.com/joshuakleveter/treehouse_node_basics#readme"
+}
