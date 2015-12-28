@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/joshuakleveter/treehouse_node_basics#readme",
   "devDependencies": {
+    "babel-core": "6.3.26",
     "babel-eslint": "5.0.0-beta6",
     "gulp": "3.9.0",
     "gulp-babel": "6.1.1",
