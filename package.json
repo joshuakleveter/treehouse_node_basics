@@ -11,5 +11,8 @@
   "bugs": {
     "url": "https://github.com/joshuakleveter/treehouse_node_basics/issues"
   },
-  "homepage": "https://github.com/joshuakleveter/treehouse_node_basics#readme"
+  "homepage": "https://github.com/joshuakleveter/treehouse_node_basics#readme",
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6"
+  }
 }
