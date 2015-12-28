@@ -1,4 +1,9 @@
 //Get a Treehouse user"s badge count and JavaScript points and display to console
+
+///////////////////
+//Import modules //
+///////////////////
+
 import https from "https";
 import http from "http";
 
@@ -19,15 +24,30 @@ function printMessage(username, badgeCount, points) {
     return message;
 }
 
-//Print error message
+
+
+/**
+ * Print error messages to console.
+ * @param  {Error} error - JS error object
+ * @return {undefined}
+ */
 function printErrorMessage(error) {
     process.stderr.write(error.message + "\n");
 }
 
+
+
+/**
+ * Get the user's profile from Treehouse
+ * @param  {String} username - User's Treehouse account name
+ * @return {undefined}
+ */
 function get(username) {
     //Connect to the Treehouse user profile API (http://teamtreehouse.com/[username].json)
     var request = https.get("https://teamtreehouse.com/" + username + ".json", function getResponseHandler(response) {
+
         var body = "";
+
         //Read the JSON data
         response.on("data", function readData(chunck) {
             body += chunck;
