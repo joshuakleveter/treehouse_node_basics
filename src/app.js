@@ -14,4 +14,4 @@ import profile from "./profile.js";
 var users = process.argv.slice(2);
 
 //Get profile info
-users.forEach(profile.get);
+users.forEach(profile.api.get);
