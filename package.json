@@ -4,7 +4,7 @@
   "description": "Treehouse Node.js Basics project",
   "main": "dist/app.js",
   "scripts": {
-      "app": "gulp build && node dist/app.js"
+    "app": "gulp build && node dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "gulp-babel": "6.1.1",
     "gulp-eslint": "1.1.1",
     "gulp-load-plugins": "1.1.0",
-    "gulp-sourcemaps": "1.6.0"
+    "gulp-sourcemaps": "1.6.0",
+    "mocha": "2.3.4"
   }
 }
