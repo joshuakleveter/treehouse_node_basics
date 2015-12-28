@@ -1,6 +1,6 @@
 //Get a Treehouse user"s badge count and JavaScript points and display to console
-var https = require("https");
-var http = require("http");
+import https from "https";
+import http from "http";
 
 /**
 * Print profile info
