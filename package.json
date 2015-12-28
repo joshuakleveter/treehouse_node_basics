@@ -1,0 +1,28 @@
+{
+  "name": "node_basics",
+  "version": "2.0.0",
+  "description": "Treehouse Node.js Basics project",
+  "main": "dist/app.js",
+  "scripts": {
+      "app": "gulp build && node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuakleveter/treehouse_node_basics.git"
+  },
+  "author": "Joshua Kleveter",
+  "bugs": {
+    "url": "https://github.com/joshuakleveter/treehouse_node_basics/issues"
+  },
+  "homepage": "https://github.com/joshuakleveter/treehouse_node_basics#readme",
+  "devDependencies": {
+    "babel-core": "6.3.26",
+    "babel-eslint": "5.0.0-beta6",
+    "babel-preset-es2015": "6.3.13",
+    "gulp": "3.9.0",
+    "gulp-babel": "6.1.1",
+    "gulp-eslint": "1.1.1",
+    "gulp-load-plugins": "1.1.0",
+    "gulp-sourcemaps": "1.6.0"
+  }
+}
