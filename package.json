@@ -2,7 +2,10 @@
   "name": "node_basics",
   "version": "1.0.0",
   "description": "Treehouse Node.js Basics project",
-  "main": "app.js",
+  "main": "dist/app.js",
+  "scripts": {
+      "app": "gulp build && node dist/app.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joshuakleveter/treehouse_node_basics.git"
