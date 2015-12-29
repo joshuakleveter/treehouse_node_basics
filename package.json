@@ -4,7 +4,9 @@
   "description": "Treehouse Node.js Basics project",
   "main": "dist/app.js",
   "scripts": {
-    "app": "gulp build && node dist/app.js"
+    "app": "gulp build && node dist/app.js",
+    "debug": "gulp build && iron-node dist/app.js",
+    "mocha": "gulp build && node node_modules/mocha/bin/mocha -R tap | node node_modules/faucet/bin/cmd.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
     "babel-eslint": "5.0.0-beta6",
     "babel-preset-es2015": "6.3.13",
     "chai": "3.4.1",
+    "faucet": "0.0.1",
     "gulp": "3.9.0",
     "gulp-babel": "6.1.1",
     "gulp-eslint": "1.1.1",
