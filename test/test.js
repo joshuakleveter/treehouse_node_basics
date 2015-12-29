@@ -1,5 +1,4 @@
 /*eslint-env mocha*/
-/*global error*/
 
 var chai = require("chai");
 var expect = chai.expect;
