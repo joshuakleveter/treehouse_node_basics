@@ -2,7 +2,7 @@
 //Get-Profile Module //
 ///////////////////////
 
-function getProfile() {
+var api = (function getProfile() {
 
     var publicAPI = {
         //public function references go here.
@@ -10,7 +10,7 @@ function getProfile() {
 
     return publicAPI;
 
-}
+})();
 
 
 
@@ -18,5 +18,4 @@ function getProfile() {
 //Module Exports //
 ///////////////////
 
-var api = getProfile();
 export { api };
