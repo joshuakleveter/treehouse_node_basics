@@ -16,14 +16,15 @@
 
 
 /**
+ * EXPORT
  * Return the module's publicAPI to the 'api' object.
  * @return {Object} - publicAPI
  */
-var api = (function getProfile() {
+export var api = (function getProfile() {
 
 
     /**
-     * Get arguments from Yargs argv object
+     * Parse arguments from Yargs argv object
      * @param  {Object} argv - argv object from Yargs
      * @return {Object}      - parsed arguments
      */
@@ -50,11 +51,3 @@ var api = (function getProfile() {
 
 
 })();
-
-
-
-///////////////////
-//Module Exports //
-///////////////////
-
-export { api };

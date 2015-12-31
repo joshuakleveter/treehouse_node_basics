@@ -2,6 +2,7 @@
 //Imports //
 ////////////
 
+import { api } from "./get-profile";
 var argv = require("yargs")
             .alias("h", "help")
             .alias("t", "topic")
@@ -16,3 +17,5 @@ var argv = require("yargs")
 /////////////
 //App Code //
 /////////////
+
+api.getArguments(argv);
