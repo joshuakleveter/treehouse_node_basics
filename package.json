@@ -5,7 +5,7 @@
   "main": "dist/app.js",
   "scripts": {
     "app": "gulp build && node dist/app.js",
-    "debug": "gulp build && iron-node dist/app.js",
+    "debug": "gulp build && iron-node dist/app.js joshuakleveter calebkleveter -t HTML",
     "mocha": "gulp build && node node_modules/mocha/bin/mocha -R tap | node node_modules/faucet/bin/cmd.js"
   },
   "repository": {
