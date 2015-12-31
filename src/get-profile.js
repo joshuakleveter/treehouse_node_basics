@@ -21,6 +21,12 @@
  */
 var api = (function getProfile() {
 
+
+    /**
+     * Get arguments from Yargs argv object
+     * @param  {Object} argv - argv object from Yargs
+     * @return {Object}      - parsed arguments
+     */
     function getArguments(argv) {
         var args = {
             users: argv._,
@@ -28,6 +34,7 @@ var api = (function getProfile() {
         };
         return args;
     }
+
 
     /**
      * Public API object.
@@ -38,7 +45,9 @@ var api = (function getProfile() {
         getArguments: getArguments
     };
 
+
     return publicAPI;
+
 
 })();
 
