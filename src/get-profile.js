@@ -21,13 +21,21 @@
  */
 var api = (function getProfile() {
 
+    function getArguments(argv) {
+        var args = {
+            users: argv._,
+            topic: argv.topic
+        };
+        return args;
+    }
+
     /**
      * Public API object.
      * This references any public functions of the module.
      * @type {Object}
      */
     var publicAPI = {
-        //public function references go here.
+        getArguments: getArguments
     };
 
     return publicAPI;

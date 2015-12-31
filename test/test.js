@@ -26,7 +26,11 @@ describe("get-profile module", () => {
     });
 
     context("getArguments() function", () => {
-        var args = getProfile.api.getArguments();
+        var argv = {
+            _: ["joshuakleveter", "calebkleveter"],
+            topic: "HTML"
+        };
+        var args = getProfile.api.getArguments(argv);
         it("should return an object", () => {
             expect(args).to.be.an("object");
         });
