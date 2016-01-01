@@ -17,11 +17,10 @@ var getProfile = require("../dist/get-profile.js");
 ////////////////
 
 describe("get-profile module", () => {
-    'use strict';
 
     context("public API", () => {
         it("should be an object", () => {
-            expect(getProfile.api).to.be.an("object");
+            expect(getProfile).to.be.an("object");
         });
     });
 
@@ -30,7 +29,7 @@ describe("get-profile module", () => {
             _: ["joshuakleveter", "calebkleveter"],
             topic: "HTML"
         };
-        var args = getProfile.api.getArguments(argv);
+        var args = getProfile.getArguments(argv);
         it("should return an object", () => {
             expect(args).to.be.an("object");
         });

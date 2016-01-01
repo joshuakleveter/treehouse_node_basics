@@ -20,7 +20,7 @@
  * Return the module's publicAPI to the 'api' object.
  * @return {Object} - publicAPI
  */
-export var api = (function getProfile() {
+var api = (function getProfile() {
 
 
     /**
@@ -51,3 +51,11 @@ export var api = (function getProfile() {
 
 
 })();
+
+
+
+///////////////////
+//Module Exports //
+///////////////////
+
+module.exports = api;
