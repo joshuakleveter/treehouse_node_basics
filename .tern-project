@@ -4,7 +4,8 @@
     "browser"
   ],
   "loadEagerly": [
-    "app.js"
+    "app.js",
+    "get-profile.js"
   ],
   "dontLoad": [
     "node_modules"
