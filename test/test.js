@@ -18,6 +18,12 @@ var getProfile = require("../dist/get-profile.js");
 
 describe("get-profile module", () => {
 
+    var argv = {
+        _: ["joshuakleveter", "calebkleveter"],
+        topic: "HTML"
+    };
+    var args = getProfile.getArguments(argv);
+
     context("public API", () => {
         it("should be an object", () => {
             expect(getProfile).to.be.an("object");
@@ -25,11 +31,6 @@ describe("get-profile module", () => {
     });
 
     context("getArguments() function", () => {
-        var argv = {
-            _: ["joshuakleveter", "calebkleveter"],
-            topic: "HTML"
-        };
-        var args = getProfile.getArguments(argv);
         it("should return an object", () => {
             expect(args).to.be.an("object");
         });
@@ -41,6 +42,17 @@ describe("get-profile module", () => {
         it("should return a 'topic' property that is a string", () => {
             expect(args).to.have.property("topic");
             expect(args.topic).to.be.a("string");
+        });
+    });
+
+    context("getUserProfiles() function", () => {
+        var profiles = getProfile.getUserProfiles(args.users);
+        it("should return an object", () => {
+            expect(profiles).to.be.an("object");
+        });
+        it("should have a property for each user that is an object", () => {
+            expect(profiles).to.have.property("joshuakleveter").that.is.an("object");
+            expect(profiles).to.have.property("calebkleveter").that.is.an("object");
         });
     });
 
